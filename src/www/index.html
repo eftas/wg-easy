@@ -24,7 +24,7 @@
 
     <div v-cloak class="container mx-auto max-w-3xl">
 
-      <div v-if="authenticated !== true">
+      <div v-if="authenticated === true">
         <span v-if="requiresPassword"
           class="text-sm text-gray-400 mb-10 mr-2 mt-3 cursor-pointer hover:underline float-right" @click="logout">
           Abmelden
@@ -472,7 +472,7 @@
         </div>
       </div>
 
-      <div v-if="authenticated !== false">
+      <div v-if="authenticated === false">
         <h1 class="text-4xl font-medium my-16 text-gray-700 text-center">VPN-Benutzerverwaltung</h1>
 
         <form @submit="login" class="shadow rounded-md bg-white mx-auto w-64 p-5 overflow-hidden mt-10">

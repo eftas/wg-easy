@@ -473,7 +473,7 @@
       </div>
 
       <div v-if="authenticated === false">
-        <h1 class="text-4xl font-medium my-16 text-gray-700 text-center">EFTAS VPN-Benutzerverwaltung</h1>
+        <h1 class="text-4xl font-medium my-16 text-gray-700 text-center">VPN-Benutzerverwaltung</h1>
 
         <form @submit="login" class="shadow rounded-md bg-white mx-auto w-64 p-5 overflow-hidden mt-10">
           <!-- Avatar -->
@@ -485,7 +485,7 @@
             </svg>
           </div>
           -->
-          <img src="./img/eftas.png" alt="EFTAS Logo">
+          <img class="mb-10" src="./img/eftas.png" alt="EFTAS Logo">
 
           <input type="password" name="password" placeholder="Password" v-model="password"
             class="px-3 py-2 text-sm text-gray-500 mb-5 border-2 border-gray-100 rounded-lg w-full focus:border-red-800 outline-none" />
